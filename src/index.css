@@ -19,6 +19,8 @@ body {
   padding: 10px;
   border-bottom: 0.5px solid rgb(233, 233, 233);
   background: white;
+  position: sticky;
+  top: 0;
 }
 
 .facebook-icon {
