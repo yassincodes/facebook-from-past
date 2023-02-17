@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Post from "./post/Post"
-import {arrayOfPosts} from "./arrays/ArrayOfPosts.jsx"
+import Post from "./post/Post";
+import { arrayOfPosts } from "./arrays/ArrayOfPosts.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,7 +17,7 @@ function App() {
     </svg>
   );
 
-  const massengerIcon = (
+  const messengerIcon = (
     <svg
       viewBox="0 0 28 28"
       alt=""
@@ -48,7 +48,12 @@ function App() {
     <div className="App">
       <div className="header-1">
         <div className="facebook-icon">{facebookIcon}</div>
-        <div className="massenger-icon">{massengerIcon}</div>
+        <a
+          href="https://messenger-from-past.vercel.app/"
+          className="messenger-icon"
+        >
+          {messengerIcon}
+        </a>
       </div>
       <div className="content">
         {arrayOfPosts.map((ele) => {
